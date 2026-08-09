@@ -61,6 +61,8 @@ def load_tokenizers():
 
     return deberta_tokenizer, roberta_tokenizer
 
+deberta_tokenizer, roberta_tokenizer = load_tokenizers()
+
 
 # --------------------------------------------------
 # TOKENIZE ONE MCQ
@@ -339,5 +341,4 @@ if st.button("Predict"):
     )
 
 
-# Load tokenizers after UI setup
-deberta_tokenizer, roberta_tokenizer = load_tokenizers()
+
